@@ -1,0 +1,59 @@
+// Tablets and smaller
+@media (max-width: 800px) {
+  #home-header {
+    height: 30rem;
+  }
+
+  .showcase {
+    padding: 100px 0;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  //   homepage ------
+  nav {
+    flex-direction: column;
+
+    .logo {
+      margin-bottom: 20px;
+    }
+  }
+
+  .showcase {
+    padding: 50px 0;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .info-section .section-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  // about page --------------
+  #logos .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img {
+      width: 100%;
+    }
+  }
+
+  .testimonials-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+  // work page ------------
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+}

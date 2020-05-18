@@ -1,0 +1,52 @@
+// variables
+$website-width: 1100px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+
+//---------- BUTTONS -----------
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  margin: 10px 0;
+}
+
+.btn-light {
+  @extend %btn-shared;
+  background-color: $light-color;
+  color: $dark-color;
+  transition: background, color 0.4s;
+
+  &:hover {
+    background-color: $dark-color;
+    color: $light-color;
+  }
+}
+.btn-dark {
+  @extend %btn-shared;
+  background-color: $dark-color;
+  color: $light-color;
+  transition: background, color 0.4s;
+  width: 50%;
+}
+// ------------------------------
+
+.container {
+  max-width: $website-width;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.current {
+  border-bottom: 1.5px solid $main-color !important;
+}
+
+.line {
+    width: 50px;
+    height: 1.5px;
+    background-color: $main-color;
+    margin: 10px auto;
+}
